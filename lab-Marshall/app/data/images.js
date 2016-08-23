@@ -1,20 +1,19 @@
 'use strict';
 
-
 module.exports = [{
   id: 1,
-  url: 'http://f.cl.ly/items/3g3J1G0w122M360w380O/3726490195_f7cc75d377_o.jpg',
-  description: 'Cute Bunny 1'
+  url: 'http://vignette1.wikia.nocookie.net/onepunchman/images/1/18/Slider_dos.png/revision/latest/scale-to-width-down/670?cb=20130220223313',
+  description: 'Saitama 1'
 }, {
   id: 2,
-  url: 'https://c4.staticflickr.com/5/4070/4479409507_844b7129e7_b.jpg',
-  description: 'Cute Bunny 2'
+  url: 'http://media.fyre.co/HmWDsHkfTFyShq7GqbE1_b01.png',
+  description: 'Saitama 2'
 }, {
   id: 3,
-  url: 'https://c1.staticflickr.com/3/2019/5824431381_7fc17099d5_b.jpg',
-  description: 'Cute Bunny 3'
+  url: 'https://de7i3bh7bgh0d.cloudfront.net/2016/07/13/20/36/14/222e1fed-24d4-4ead-bb74-52e888eef12b/viz-blog_saitama.jpg',
+  description: 'Saitama 3'
 }, {
   id: 4,
-  url: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Giant_inflatable_bunnies_have_taken_over_City_Hall._(26412731036).jpg',
-  description: 'Cute Bunny 4'
+  url: 'https://images.alphacoders.com/656/656720.jpg',
+  description: 'Saitama 4'
 }];
