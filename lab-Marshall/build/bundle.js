@@ -95,7 +95,7 @@
 /* 16 */
 /***/ function(module, exports) {
 
-	eval("'use strict';\n\nmodule.exports = [{\n  id: 1,\n  url: 'http://f.cl.ly/items/3g3J1G0w122M360w380O/3726490195_f7cc75d377_o.jpg',\n  description: 'Cute Bunny 1'\n}, {\n  id: 2,\n  url: 'https://c4.staticflickr.com/5/4070/4479409507_844b7129e7_b.jpg',\n  description: 'Cute Bunny 2'\n}, {\n  id: 3,\n  url: 'https://c1.staticflickr.com/3/2019/5824431381_7fc17099d5_b.jpg',\n  description: 'Cute Bunny 3'\n}, {\n  id: 4,\n  url: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Giant_inflatable_bunnies_have_taken_over_City_Hall._(26412731036).jpg',\n  description: 'Cute Bunny 4'\n}];\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/data/images.js\n ** module id = 16\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/data/images.js?");
+	eval("'use strict';\n\nmodule.exports = [{\n  id: 1,\n  url: 'http://vignette1.wikia.nocookie.net/onepunchman/images/1/18/Slider_dos.png/revision/latest/scale-to-width-down/670?cb=20130220223313',\n  description: 'Saitama 1'\n}, {\n  id: 2,\n  url: 'http://media.fyre.co/HmWDsHkfTFyShq7GqbE1_b01.png',\n  description: 'Saitama 2'\n}, {\n  id: 3,\n  url: 'https://de7i3bh7bgh0d.cloudfront.net/2016/07/13/20/36/14/222e1fed-24d4-4ead-bb74-52e888eef12b/viz-blog_saitama.jpg',\n  description: 'Saitama 3'\n}, {\n  id: 4,\n  url: 'https://images.alphacoders.com/656/656720.jpg',\n  description: 'Saitama 4'\n}];\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/data/images.js\n ** module id = 16\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/data/images.js?");
 
 /***/ },
 /* 17 */
@@ -107,19 +107,19 @@
 /* 18 */
 /***/ function(module, exports) {
 
-	eval("module.exports = \"<div class=\\\"container\\\">\\n  <div class=\\\"row\\\">\\n    <div ng-repeat=\\\"img in th.images\\\" class=\\\"col-xs-2\\\">\\n      <a href=\\\"#/fullsize/{{img.id}}\\\" class=\\\"thumbnail\\\"></a>\\n      <img ng-src=\\\"{{img.url}}\\\" height=\\\"100\\\" width=\\\"100\\\"/>\\n    </div>\\n  </div>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/thumbnail/thumbnail.html\n ** module id = 18\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/thumbnail/thumbnail.html?");
+	eval("module.exports = \"<div class=\\\"container\\\">\\n  <div class=\\\"row\\\">\\n    <div ng-repeat=\\\"img in th.images\\\" class=\\\"col-xs-2\\\">\\n      <a href=\\\"#/fullsize/{{img.id}}\\\" class=\\\"thumbnail\\\">\\n        <img ng-src=\\\"{{img.url}}\\\" height=\\\"100\\\" width=\\\"100\\\" />\\n      </a>\\n    </div>\\n  </div>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/thumbnail/thumbnail.html\n ** module id = 18\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/thumbnail/thumbnail.html?");
 
 /***/ },
 /* 19 */
 /***/ function(module, exports) {
 
-	eval("module.exports = \"<div>\\n  <div>\\n    <div>\\n      <h1>{{fs.image.description}}</h1>\\n    </div>\\n  </div>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/fullsize/fullsize.html\n ** module id = 19\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/fullsize/fullsize.html?");
+	eval("module.exports = \"<div class =\\\"container\\\">\\n  <div class=\\\"row\\\">\\n    <div class=\\\"col-md-6 col-md-offeset-3\\\">\\n      <h1>{{fs.image.description}}</h1>\\n      <img ng-src=\\\"{{fs.image.url}}\\\" height=\\\"400\\\" width=\\\"400\\\" />\\n    </div>\\n  </div>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/fullsize/fullsize.html\n ** module id = 19\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/fullsize/fullsize.html?");
 
 /***/ },
 /* 20 */
 /***/ function(module, exports) {
 
-	eval("module.exports = \"\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/error/error.html\n ** module id = 20\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/error/error.html?");
+	eval("module.exports = \"<div class=\\\"container\\\">\\n  <div>\\n    <div>\\n      <i class=\\\"stop fa fa-hand-paper-o\\\"></i> Error: {{errorMessage}}\\n    </div>\\n    <div class=\\\"alert alert-danger\\\">\\n      <strong>Warning! </strong> Can't access resource.\\n    </div>\\n  </div>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/error/error.html\n ** module id = 20\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/error/error.html?");
 
 /***/ },
 /* 21 */
@@ -131,7 +131,7 @@
 /* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar angular = __webpack_require__(12);\nvar demoApp = angular.module('demoApp');\n\ndemoApp.controller('ThumbnailController', ['$rootScope', ThumbnailController]);\n\nfunction ThumbnailController() {\n  this.images = $rootScope.imageData;\n}\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/thumbnail/index.js\n ** module id = 22\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/thumbnail/index.js?");
+	eval("'use strict';\n\nvar angular = __webpack_require__(12);\nvar demoApp = angular.module('demoApp');\n\ndemoApp.controller('ThumbnailController', ['$rootScope', ThumbnailController]);\n\nfunction ThumbnailController($rootScope) {\n  this.images = $rootScope.imageData;\n}\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/thumbnail/index.js\n ** module id = 22\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/thumbnail/index.js?");
 
 /***/ },
 /* 23 */
@@ -141,9 +141,15 @@
 
 /***/ },
 /* 24 */
+/***/ function(module, exports, __webpack_require__) {
+
+	eval("'use strict';\n\n__webpack_require__(25);\n\nvar angular = __webpack_require__(12);\nvar demoApp = angular.module('demoApp');\n\ndemoApp.controller('ErrorController', ['$rootScope', function ($rootScope) {\n  this.errorMessage = $rootScope.errorMessage;\n}]);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/error/index.js\n ** module id = 24\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/error/index.js?");
+
+/***/ },
+/* 25 */
 /***/ function(module, exports) {
 
-	eval("\"use strict\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/error/index.js\n ** module id = 24\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/error/index.js?");
+	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/error/error.scss\n ** module id = 25\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/error/error.scss?");
 
 /***/ }
 /******/ ]);
