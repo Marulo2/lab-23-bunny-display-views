@@ -13,33 +13,33 @@ var app = angular.module('demoApp', [angular_route]);
 
 app.run(['$rootScope', function($rootScope){
   $rootScope.imageData = require('./data/images.js');
-  $rootScope
+  $rootScope.errorMessage = 'Error: Can not access unknown page';
 }]);
 
 app.config(['$routeProvider', function($route) {
   $route
     .when('/', {
-      templateUrl: './app/view/home/home.html',
+      templateUrl: require('./view/home/home.html'),
       controller: 'HomeController',
       controllerAs: 'hc'
     })
     .when('/thumbnail', {
-      templateUrl: './app/view/thumbnail/thumbnail.html',
-      controller: 'ThumbnailController'
-      controllerAs: 'tc'
+      templateUrl: require('./view/thumbnail/thumbnail.html'),
+      controller: 'ThumbnailController',
+      controllerAs: 'th'
     })
     .when('fullsize/:id', {
-      templateUrl: './app/view/fullsize/fullsize.html',
+      templateUrl: require('./view/fullsize/fullsize.html'),
       controller: 'FullsizeController',
       controllerAs: 'fs'
     })
     .when('/error', {
-      templateUrl: './app/view/error/error.html',
+      templateUrl: require('./view/error/error.html'),
       controller: 'ErrorController',
       controllerAs: 'er'
     })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/error'
     });
 }]);
 
@@ -47,3 +47,4 @@ app.config(['$routeProvider', function($route) {
 require('./view/home');
 require('./view/thumbnail');
 require('./view/fullsize');
+require('./view/error');
